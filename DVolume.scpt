@@ -3,6 +3,7 @@ set currentVolume to output volume of (get volume settings)
 set newVolume to (currentVolume - (100 / 17)) as integer
 set volume output volume newVolume
 
+# tell application "Growl" use this if you've installed the paid Growl app
 tell application "GrowlHelperApp"
     set the allNotificationsList to {"Volume Applescript Update"}
     set the enabledNotificationsList to {"Volume Applescript Update"}
